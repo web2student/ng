@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/web2student/ng']
+  env: ['PROJECT_ROOT=ng-test']
+  args: ['build', '-t', 'gcr.io/ng-test-237914/myimage', '.']
